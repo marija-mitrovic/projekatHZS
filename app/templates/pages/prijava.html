@@ -1,0 +1,43 @@
+    <style>
+        #listaTimova {
+            visibility: hidden;
+        }
+    </style>
+
+    <div class="container sivoprovidno">
+        <form id="forma" action="javascript:void(0);" class="form-horizontal">
+            <h2>Informacije o timu:</h2>
+            <div class="opsteInformacije">
+                <div class="form-group">
+                    <label for="team_name">Ime tima</label>
+                    <input class="form-control" type="text" name="team_name" id="team_name" required/>
+                </div>
+		<div class="form-group">
+                    <label for="description">Opis tima</label>
+                    <input class="form-control" type="text" name="description" id="description" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="photo_url">Link ka slici tima</label>
+                    <input class="form-control" type="text" name="photo_url" id="photo_url" required/>
+                </div>
+            </div>
+
+
+            <div class="team_members row">
+		<!-- OVDE IDU CLANOVI TIMA -->
+            </div>
+
+            <div class="text-center">
+                <input type="submit" value="Pošalji prijavu" onclick="posaljiPrijavu();" class="btn btn-secondary btn-lg btn-block" />
+            </div>
+        </form>
+        <p id="output"></p>
+
+
+        <form id="novaForma" action="#">
+            <div class="text-center">
+                <a href="/app/listaTimova" id="listaTimova" class="btn btn-secondary btn-lg btn-block">Lista timova</a>
+            </div>
+        </form>
+    </div>
+    <script src="static/js/prijava.js"></script>

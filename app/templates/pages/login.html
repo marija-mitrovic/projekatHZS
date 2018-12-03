@@ -1,0 +1,56 @@
+<div class="row">
+   <div class="offset-lg-2 col-lg-8 container1">
+      <h2>Login timova</h2>
+      <form id="login" method="POST" action="javascript:void(0)">
+         <div class="form-group row">
+            <label for="sifraTima" class="col-4 col-form-label">Šifra tima:</label> 
+            <div class="col-8">
+               <div class="input-group">
+                  <div class="input-group-addon">
+                     <i class="fa fa-key"></i>
+                  </div>
+                  <input id="sifraTima" name="sifraTima" type="text" class="form-control here" required="required">
+               </div>
+            </div>
+         </div>
+         <div class="form-group row">
+            <div class="offset-4 col-8">
+               <button name="submit" type="submit" onclick="handleLogin()" class="btn btn-primary">Uloguj se</button>
+            </div>
+         </div>
+      </form>
+      <div id="output"></div>
+      <div id="prikaz">
+         <form id="change" method="POST" action="javascript:void(0)">
+            <div class="form-group row">
+               <label for="imeTima" class="col-4 col-form-label">Ime tima</label> 
+               <div class="col-8">
+                  <div class="input-group">
+                     <div class="input-group-addon">
+                        <i class="fa fa-address-card"></i>
+                     </div>
+                     <input id="imeTima" name="imeTima" type="text" class="form-control here">
+                  </div>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="opisTima" class="col-4 col-form-label">Opis tima</label> 
+               <div class="col-8">
+                  <textarea id="opisTima" name="opisTima" cols="40" rows="5" class="form-control"></textarea>
+               </div>
+            </div>
+            <div class="form-group row">
+               <div class="offset-md-4 col-md-4 col-sm-6">
+                  <button name="submit" type="submit" onclick="promenaOpstih()" class="btn btn-primary">Promeni podatke</button>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <button type="reset" onclick="logout()" class="btn btn-primary">Izloguj se</button>
+               </div>
+            </div>
+         </form>
+	<h2>Izmena informacija o članovima</h2>
+         <div id="tabelaIzmena"></div>
+      </div>
+   </div>
+</div>
+<script src="static/js/login.js"></script>

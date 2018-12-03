@@ -1,0 +1,54 @@
+html, body {
+    min-height:100%;
+    margin:0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(../img/sl.png);
+    background-size: cover;
+    background-color: #1d1d1d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.container1 h2
+{
+	width:100%;
+	border-bottom:1px solid #999;
+	margin-bottom:30px;
+}
+form, .container1
+{
+	padding:20px !important;
+}
+.sivoprovidno, .container1, #listaTimova
+{
+	background-color:rgba(100,100,100,0.3);
+}
+#listaTimova
+{
+    padding: 20px;
+}
+.col-lg-8
+{
+	padding:0;
+}
+.row
+{
+      margin-right: 0;
+      margin-left: 0;
+}
+.fa-key, .fa-address-card
+{
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.vcenter 
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
